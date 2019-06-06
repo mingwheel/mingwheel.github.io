@@ -5,7 +5,7 @@ html {
 }
 body {
   display: flex;
-  font-family: helvetica, arial, sans;
+  font-family: 'Open Sans', helvetica, arial, sans;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -32,6 +32,12 @@ p {
   line-height: 1.5;
   margin: 0.75em 0;
 }
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, sans;
+  font-weight: 200;
+}
+
 
 .content-container {
   display: flex;
@@ -352,15 +358,15 @@ p {
   box-sizing: border-box;
   color: #fff;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.7em;
   font-weight: bold;
-  height: 2.5em;
+  height: 1.5em;
   line-height: 1;
-  padding-top: 0.85em;
+  padding-top: 0.25em;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  width: 2.5em;
+  width: 1.5em;
 }
 
 .social-link:hover,
@@ -397,7 +403,7 @@ p {
 }
 
 .bio-box h3 {
-  color: #000;
+  color: #fff;
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
