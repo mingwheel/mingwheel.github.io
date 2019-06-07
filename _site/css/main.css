@@ -322,7 +322,7 @@ h1,h2,h3,h4,h5,h6 {
   width: 0;
 } */
 .hero-home {
-  background-image: url(/images/shark.jpg);
+  background-image: url(/sample_website_2/images/shark.jpg);
   background-position: center top;
 }
 .hero-content {
