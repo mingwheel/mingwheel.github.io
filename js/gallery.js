@@ -1,3 +1,7 @@
+/* Activates Image Gallery
+ * Attach an event listener to each img in the gallery
+ * Add response to click 
+ */
 function activateGallery() {
   let thumbnails = document.querySelectorAll("#gallery-thumbs > div > img");
   let mainImage = document.querySelector("#gallery-photo > img");
@@ -7,11 +11,14 @@ function activateGallery() {
   let currentClass = "current";
 
   thumbnails.forEach(thumbnail => {
+    // Preload large images
+    let newImgSrc = thumbnail.dataset.largeVersion;
+    let newImgAlt = thumbnail.dataset.title;
+    let largeVersion = new Image();
+    largeVersion.src = thumbnail.dataset.largeVersion;
+    
     thumbnail.addEventListener("click", function() {
-      // Set clicked img as main img
-      let newImgSrc = this.dataset.largeVersion;
-      let newImgAlt = this.dataset.title;
-      
+      // Set clicked img as display img
       mainImage.setAttribute("src", newImgSrc);
       mainImage.setAttribute("alt", newImgAlt);
 
